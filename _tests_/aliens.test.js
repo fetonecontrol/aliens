@@ -1,7 +1,4 @@
-import { storeState } from "../src/js/aliens.js";
-import { changeState } from "../src/js/aliens.js";
-
-import { alienQueen } from "../src/js/aliens.jss";
+import { alienQueen, alien, giantQueen } from "../src/aliens.js";
 
 describe("Aliens", () => {
 
@@ -14,10 +11,15 @@ describe("Aliens", () => {
   // });
 
   test("should determine if an object is created", () => {
-    expect(alienQueen()).toEqual({});
+    expect(alien()).toEqual({ "height": 7 });
   });
 
-  test("should determine if durian now has a property of stinky", () => {
-    expect(alienQueen.height).toEqual("7 feet");
+  test("should determine the supreme dominance of the queen", () => {
+    expect(alienQueen.height).toEqual(7);
+  });
+
+  test("should grow the height of the queen by 2 times", () => {
+    expect(giantQueen.height).toEqual(14)
   });
 });
+
