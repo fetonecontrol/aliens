@@ -1,4 +1,4 @@
-import { alienQueen, alien, giantQueen } from "../src/aliens.js";
+import { alienQueen, alien, giantQueen, greenAlien } from "../src/aliens.js";
 
 describe("Aliens", () => {
 
@@ -11,7 +11,7 @@ describe("Aliens", () => {
   // });
 
   test("should determine if an object is created", () => {
-    expect(alien()).toEqual({ "height": 7 });
+    expect(alien()).toEqual({ "height": 14 });
   });
 
   test("should determine the supreme dominance of the queen", () => {
@@ -21,5 +21,10 @@ describe("Aliens", () => {
   test("should grow the height of the queen by 2 times", () => {
     expect(giantQueen.height).toEqual(14)
   });
+
+  test("should grow the height of the queen by 2 times", () => {
+    expect(greenAlien.height).toEqual(7)
+  });
+
 });
 
