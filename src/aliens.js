@@ -56,8 +56,7 @@ export const multiplyForever = (thing) => {
 //   }
 // }
 
-export const durian = storeState();
-export const chili = storeState();
+
 export const human = storeState();
 
 export const alienHeight = changeState("height")(7);
